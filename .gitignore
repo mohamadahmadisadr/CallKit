@@ -6,7 +6,7 @@
 .DS_Store
 
 # Android Specific
-/build/
+build/
 /captures/
 .externalNativeBuild/
 .cxx/
