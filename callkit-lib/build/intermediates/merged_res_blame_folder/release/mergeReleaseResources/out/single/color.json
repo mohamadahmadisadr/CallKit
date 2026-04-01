@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "social.persian.callkit_lib.callkit-lib-release-44:/color/vector_tint_theme_color.xml",
+        "source": "social.persian.callkit_lib.callkit-lib-ui-release-25:/color/vector_tint_theme_color.xml"
+    },
+    {
+        "merged": "social.persian.callkit_lib.callkit-lib-release-44:/color/common_google_signin_btn_text_light.xml",
+        "source": "social.persian.callkit_lib.callkit-lib-play-services-base-18.1.0-14:/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "social.persian.callkit_lib.callkit-lib-release-44:/color/vector_tint_color.xml",
+        "source": "social.persian.callkit_lib.callkit-lib-ui-release-25:/color/vector_tint_color.xml"
+    },
+    {
+        "merged": "social.persian.callkit_lib.callkit-lib-release-44:/color/common_google_signin_btn_tint.xml",
+        "source": "social.persian.callkit_lib.callkit-lib-play-services-base-18.1.0-14:/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "social.persian.callkit_lib.callkit-lib-release-44:/color/common_google_signin_btn_text_dark.xml",
+        "source": "social.persian.callkit_lib.callkit-lib-play-services-base-18.1.0-14:/color/common_google_signin_btn_text_dark.xml"
+    }
+]

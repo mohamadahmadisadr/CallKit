@@ -1,0 +1,8 @@
+social.persian.callkit_lib.callkit-lib-pngs-0 /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/generated/res/pngs/release
+social.persian.callkit_lib.callkit-lib-updated_navigation_xml-1 /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/generated/updated_navigation_xml/release
+social.persian.callkit_lib.callkit-lib-mergeReleaseResources-2 /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+social.persian.callkit_lib.callkit-lib-mergeReleaseResources-3 /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+social.persian.callkit_lib.callkit-lib-release-4 /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/merged_res/release/mergeReleaseResources
+social.persian.callkit_lib.callkit-lib-release-5 /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/packaged_res/release/packageReleaseResources
+social.persian.callkit_lib.callkit-lib-main-6 /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/src/main/res
+social.persian.callkit_lib.callkit-lib-release-7 /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/src/release/res

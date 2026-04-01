@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "social.persian.callkit_lib.callkit-lib-release-44:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/Users/mohamad/.gradle/caches/9.3.1/transforms/e22734b45150a849c116f4584cd81aad/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "social.persian.callkit_lib.callkit-lib-mergeReleaseResources-42:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/Users/mohamad/.gradle/caches/9.3.1/transforms/e22734b45150a849c116f4584cd81aad/transformed/material3-release/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

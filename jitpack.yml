@@ -1,0 +1,6 @@
+jdk:
+  - openjdk17
+before_install:
+  - ./gradlew :callkit-lib:assembleRelease
+install:
+  - ./gradlew :callkit-lib:publishToMavenLocal
