@@ -1,18 +1,15 @@
+# IDE Settings
+.idea/
 *.iml
-.gradle
+.gradle/
 /local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+
+# Android Specific
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
 
 # Firebase
 google-services.json
@@ -26,3 +23,6 @@ secrets.properties
 *.apk
 *.aar
 *.bundle
+
+# Kotlin
+.kotlin/
