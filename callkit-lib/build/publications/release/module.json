@@ -1,0 +1,174 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.mohamadahmadisadr",
+    "module": "callkit-lib",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "callkit-lib-1.0.0.aar",
+          "url": "callkit-lib-1.0.0.aar",
+          "size": 26842,
+          "sha512": "93fe0fbec5edf2d7518787982884760184595eaf400e1c585fa1497f870a894016a0bbf8b5929fe1a24aca37970997d033ce1a2ce59b0ebbb66203e4b3dc5288",
+          "sha256": "a5712b9b7b7fb7c823fb3d1df271c390e96c1746bd2378eef5296b89bbd2139b",
+          "sha1": "6ba0a41ac5918fa99df3578002a49cd75bd07c15",
+          "md5": "27a6453fee3a451c41b14b69ad915013"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.18.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-ktx",
+          "version": {
+            "requires": "2.10.0"
+          }
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2024.09.00"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-graphics"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling-preview"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "androidx.compose.material",
+          "module": "material-icons-extended"
+        },
+        {
+          "group": "com.google.firebase",
+          "module": "firebase-messaging",
+          "version": {
+            "requires": "25.0.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "callkit-lib-1.0.0.aar",
+          "url": "callkit-lib-1.0.0.aar",
+          "size": 26842,
+          "sha512": "93fe0fbec5edf2d7518787982884760184595eaf400e1c585fa1497f870a894016a0bbf8b5929fe1a24aca37970997d033ce1a2ce59b0ebbb66203e4b3dc5288",
+          "sha256": "a5712b9b7b7fb7c823fb3d1df271c390e96c1746bd2378eef5296b89bbd2139b",
+          "sha1": "6ba0a41ac5918fa99df3578002a49cd75bd07c15",
+          "md5": "27a6453fee3a451c41b14b69ad915013"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "callkit-lib-1.0.0-sources.jar",
+          "url": "callkit-lib-1.0.0-sources.jar",
+          "size": 5454,
+          "sha512": "7a07c242d232c9efed2464694932af0ae8d67c2fe5972b0661d8e39be53bb12384feb2bb876b9ae8392eb8e37d522f8875f00babf253f21345c4434545c24923",
+          "sha256": "aaad2431326bf7ad2a27c1794c0a41ef2a4185946167f3baa2a4c3cb6ffcbb03",
+          "sha1": "5d544582a9c29b93b80ce4094458f8a9d45749c1",
+          "md5": "2a4e65a2df9d2d903934695c4b1f32f6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "callkit-lib-1.0.0-javadoc.jar",
+          "url": "callkit-lib-1.0.0-javadoc.jar",
+          "size": 338432,
+          "sha512": "500fa05a517d482c3732b57dea7ccafb6181d9be12071641ee1615f3c97b111ead0cf1e574757d40b4b95c1e7de3622471cb228b4d42293aefcef336328c9b42",
+          "sha256": "eb5b00bd7d3fa6851b9d51e3569e22cd3037fbf743c853037078ba5d065cb1d8",
+          "sha1": "35d61a128732c9b2959c011c55ba044d9ca9c926",
+          "md5": "5d708a13812c71d1d17f735ad3e30f5e"
+        }
+      ]
+    }
+  ]
+}

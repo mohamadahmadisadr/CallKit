@@ -38,7 +38,6 @@ import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import social.persian.callkit_lib.ui.theme.CallKitTheme
 
 class CallActivity : ComponentActivity() {
     
@@ -54,7 +53,7 @@ class CallActivity : ComponentActivity() {
 
         enableEdgeToEdge()
         setContent {
-            CallKitTheme {
+            MaterialTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background

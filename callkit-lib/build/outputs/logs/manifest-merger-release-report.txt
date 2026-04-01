@@ -1,0 +1,16 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest14405414571436205214.xml:2:13-83
+INJECTED from /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest14405414571436205214.xml:2:13-83
+	package
+		INJECTED from /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest14405414571436205214.xml
+	xmlns:android
+		ADDED from /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest14405414571436205214.xml:2:23-81
+uses-sdk
+INJECTED from /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest14405414571436205214.xml reason: use-sdk injection requested
+INJECTED from /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest14405414571436205214.xml
+INJECTED from /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest14405414571436205214.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest14405414571436205214.xml
+	android:minSdkVersion
+		INJECTED from /Users/mohamad/AndroidStudioProjects/CallKit/callkit-lib/build/intermediates/tmp/ProcessLibraryManifest/release/tempAndroidManifest14405414571436205214.xml

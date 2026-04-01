@@ -1,0 +1,6 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:social.persian.callkit_lib/CallKit.CallKitListener///PointingToDeclaration/social/persian/callkit_lib/CallKit.CallKitListener.html
+$dokka.location:social.persian.callkit_lib/MyFirebaseMessagingService.Companion///PointingToDeclaration/social/persian/callkit_lib/MyFirebaseMessagingService.Companion.html
+social.persian.callkit_lib
+

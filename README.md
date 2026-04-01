@@ -7,44 +7,87 @@ Hey there! This is a simple Android project designed to help you integrate nativ
 - **Native Call Integration**: Uses `TelecomManager` so your calls show up in the system's phone app and lock screen.
 - **Firebase Ready**: Pre-configured with FCM for handling incoming call notifications.
 - **Compose UI**: A clean, modern dashboard built with Jetpack Compose.
-- **Reusable Library**: Most of the heavy lifting is tucked away in the `callkit-lib` module, making it easier to drop into your own projects.
+- **Reusable Library**: Most of the heavy lifting is tucked away in the `callkit-lib` module.
 
-## Getting Started
+## GitHub Repository
+Find the source code and contribute at: [https://github.com/mohamadahmadisadr/CallKit](https://github.com/mohamadahmadisadr/CallKit)
 
-1. **Add your config**: Since this project uses Firebase, you'll need to drop your own `google-services.json` into the `app/` folder. (Don't worry, it's ignored by Git!)
-2. **Permissions**: The app will ask for Notification and "Display over other apps" permissions to make sure calls can pop up even when you're busy with something else.
-3. **Registration**: Hit the "Register Phone Account" button first—this tells Android that your app is allowed to handle calls.
-4. **Test it out**: Use the "Simulate Incoming Call" button to see it in action!
+## Setup Instructions (Before Implementing)
+
+### 1. Firebase Configuration
+*   **google-services.json**: Create a project in the [Firebase Console](https://console.firebase.google.com/), add an Android app, and download the `google-services.json` file. Place it in your `app/` directory.
+*   **Plugin**: Ensure the Google Services plugin is added to your root `build.gradle.kts` and applied in your app-level `build.gradle.kts`.
+
+### 2. Required Permissions
+Add the following permissions to your `AndroidManifest.xml`:
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+<uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<uses-permission android:name="android.permission.MANAGE_OWN_CALLS" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+```
+
+### 3. Service Declaration
+Ensure your `AndroidManifest.xml` includes the `ConnectionService`:
+
+```xml
+<service
+    android:name="social.persian.callkit_lib.CallConnectionService"
+    android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE"
+    android:exported="true">
+    <intent-filter>
+        <action android:name="android.telecom.ConnectionService" />
+    </intent-filter>
+</service>
+```
 
 ## How to use it in your code
 
-The library is designed to be super simple. Here's a quick example of how to initialize it in your `MainActivity` or `Application` class:
+### 1. Dependency
+Add JitPack to your root `settings.gradle.kts`:
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") }
+    }
+}
+```
+
+Then add the library to your app's `build.gradle.kts`:
+```kotlin
+dependencies {
+    implementation("com.github.mohamadahmadisadr:CallKit:v1.0.0")
+}
+```
+
+### 2. Initialization
+Initialize `CallKit` in your `MainActivity` or `Application` class:
 
 ```kotlin
-// 1. Initialize CallKit to listen for call events
 CallKit.init(object : CallKit.CallKitListener {
     override fun onTokenRefreshed(token: String) {
-        // Send this token to your server to target this device for calls
-        println("FCM Token: $token")
+        // Send this token to your server
     }
 
     override fun onCallAccepted(callerName: String) {
-        // User picked up! Navigate to your active call screen
-        println("Call accepted from: $callerName")
+        // Handle call acceptance
     }
 
     override fun onCallDeclined(callerName: String) {
-        // User hung up or declined
-        println("Call declined")
+        // Handle call decline
     }
 
     override fun onCallMissed(callerName: String) {
-        // Handle missed call UI
-        println("Missed call from: $callerName")
+        // Handle missed call
     }
 })
 ```
-
-That's it! The library handles the system-level `ConnectionService` and Firebase messaging in the background.
 
 Happy coding! 🚀
