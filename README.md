@@ -16,7 +16,7 @@ Find the source code and contribute at: [https://github.com/mohamadahmadisadr/Ca
 ## Setup Instructions (Before Implementing)
 
 ### 1. Firebase Configuration
-*   **google-services.json**: Create a project in the [Firebase Console](https://console.firebase.google.com/), add an Android app, and download the `google-services.json` file. Place it in your `app/` directory.
+*   **google-services.json**: Create a project in the [Firebase Console](https://console.firebase.org/), add an Android app, and download the `google-services.json` file. Place it in your `app/` directory.
 *   **Plugin**: Ensure the Google Services plugin is added to your root `build.gradle.kts` and applied in your app-level `build.gradle.kts`.
 
 ### 2. Required Permissions
@@ -46,6 +46,30 @@ Ensure your `AndroidManifest.xml` includes the `ConnectionService`:
 </service>
 ```
 
+### 4. Push Notification Data Payload
+To trigger an incoming call via FCM, your server must send a push notification with a **data** payload. The library looks for the following keys:
+
+| Key | Value | Description |
+| :--- | :--- | :--- |
+| `type` | `incoming_call` | Tells the library to process this as a call. |
+| `caller_name` | *String* | The name displayed on the incoming call screen. |
+
+**Example JSON Payload:**
+```json
+{
+  "message": {
+    "token": "DEVICE_FCM_TOKEN",
+    "android": {
+      "priority": "high"
+    },
+    "data": {
+      "type": "incoming_call",
+      "caller_name": "John Doe"
+    }
+  }
+}
+```
+
 ## How to use it in your code
 
 ### 1. Dependency
@@ -64,7 +88,7 @@ dependencyResolutionManagement {
 Then add the library to your app's `build.gradle.kts`:
 ```kotlin
 dependencies {
-    implementation("com.github.mohamadahmadisadr:CallKit:v1.0.0")
+    implementation("com.github.mohamadahmadisadr:CallKit:v1.0.1")
 }
 ```
 
