@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CallKit</string>
+    <string name="default_notification_channel_id">default_channel</string>
+    <string name="call_notification_channel_id">call_channel</string>
+</resources>
+
+<!--    curl -X POST -H "Authorization: Bearer ya29.c.c0AZ4bNpbP9aeHwuxL5FFLfasLlv2KlKGMELr67Ip68PzBgllZ2MBwNmxMC9qTURaKXIFRVKjuwsTuaRz4VxFlSGq6waGvZOH0Ic4TqsKpCt8ipRXHNU8lUJQGDG81rxqJ84kip1NpA71N-Qhx6eB83X9rTcVYxR-fml6Mb4dIn2cvYpXs_RTWS-Kw3xmBUR_fOMfP4lZKnc5FvnBVWdOgDQHovwjrLCuBhOhooWesI5vlGwZ7JV7cwCZdKMUjjaHRGQGuvaDQeGKnKQF-K14eqXDbkWI4Ai180Axo_nOvnk8Pp3KvoafjgxnrfbxnIAf_a&#45;&#45;JaQKuUSEi5tYntdsemsy3qg4F5ID7Ihq0WJjXhLXBVr2eVdK6Uj_2Cp2WEEf_J_NcChEE400CVfwe9mfd9gbF7gFzjWvi-snc-BB_FjzWJaw49sBBMbQ7ox5s5fBhg02XyxbVJ7x1sio8m_oM52mI5YQ2b-r1zbnphV1o335f72myORd0gdwcwXIeR_I6bnJYwpBJwe4X8FYp_ZOxjJt1zkcjq3vttewzoyWwy-tay-qdBfijjVo0Jo3VqnjVywd1erahOBXbYdnlVMgplalJfihMxhRnvk3d_gyn0pJ14fmcl9Oywb3gJVsyWvcmrSUkVojXMeQnfuneWkgqsl6bZpad_V91iBlWxSXIS1JlVjxa4OJO78eQdJr4vOuSzm3f1x72s0pk0rjtpB39X1I_ZnIiycYs5BJ4S0FieridQxQ0_1uWJrX7UlZU5SiXbqUntg4QSOdw7ohb2vFbzjOd_g16YB0uXpY48Qfswi7V3s5m9Msq9U7c3_yBhg7r8s8t7mtItu_m9pWf41lpWJ5ipm37W9fFfpYniy83Mef-QJumaq649usrQqich-fzfmF05wSj7jwRhfQh0FeWzjuF09z6W_fnS7w69SB90c092vMWU5IoiBoUqka-_6b8Xstd4Vh0YW2b52JwOdQadS6Rh&#45;&#45;ZbSw_bbkIh-BJ8IcJzUyF-YFZRgx" \-->
+<!--    -H "Content-Type: application/json" \-->
+<!--    -d '{-->
+<!--    "message": {-->
+<!--    "token": "dSk4couNRtyoajSdOhzPpS:APA91bErq5ibomQ5zra1uwmQ-8q094NswjuRpVoKQwNFtgAvRssMaQRkiPWLIsdca1ZUaCpGsRLWRLRPBNASEju6fmHj0Fzd9myfutUMIcrGeDbcdLnVc4E",-->
+<!--    "android": {-->
+<!--    "priority": "high"-->
+<!--    },-->
+<!--    "data": {-->
+<!--    "caller_name": "John Doe",-->
+<!--    "type": "incoming_call"-->
+<!--    }-->
+<!--    }-->
+<!--    }' https://fcm.googleapis.com/v1/projects/callkit-ba76d/messages:send-->
