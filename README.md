@@ -88,7 +88,7 @@ dependencyResolutionManagement {
 Then add the library to your app's `build.gradle.kts`:
 ```kotlin
 dependencies {
-    implementation("com.github.mohamadahmadisadr:CallKit:v1.0.1")
+    implementation("com.github.mohamadahmadisadr:CallKit:1.0.1")
 }
 ```
 
@@ -114,5 +114,6 @@ CallKit.init(object : CallKit.CallKitListener {
     }
 })
 ```
+![img.png](/Users/mohamad/Desktop/Screenshot_20260401_202030.png)
 
 Happy coding! 🚀
